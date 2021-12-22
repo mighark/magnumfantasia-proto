@@ -130,7 +130,7 @@ public class JugadorControl : MonoBehaviour {
                 animator.SetBool("Jump", true);
                 rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(new Vector2(0, speedJump), ForceMode2D.Impulse);
-            } else if (jump && isGrounded()){
+            } else if (jump && rb.velocity.y <= 0 && isGrounded()){
                 jump = false;
                 ///doblejump = false;
                 animator.SetBool("Jump", false);
