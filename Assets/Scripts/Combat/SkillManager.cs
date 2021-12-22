@@ -9,6 +9,8 @@ public class SkillManager : MonoBehaviour {
     
     private bool[] frozen;
     public Text[] cooldownText;
+
+    public string[] defaultText = {"Q", "1", "2", "3", "4", "5"};
     
     //private Vida vida;
 
@@ -40,7 +42,6 @@ public class SkillManager : MonoBehaviour {
     
         
     void updateCooldowns() {
-        string[] defaultText = {"Q", "1", "2", "3", "4", "5"};
         for(int i = 0; i < skillCooldowns.Length; i++) {
             if(frozen[i]) {
                 cooldownText[i].text = defaultText[i];
