@@ -13,13 +13,19 @@ public class StageFinish : MonoBehaviour {
     public SkillsPanel skillsPanel;
     public SkillManager skills;
     
+    private JugadorControl jugadorControl;
     private CameraControl cameraControl;
     private bool paused;
     private bool panelOpen;
 
     void Start() {
+        jugadorControl = GameObject.FindGameObjectWithTag("Player").GetComponent<JugadorControl>();
         cameraControl = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraControl>();
         skillsPanel.updateSkills(skills);
+
+        if(PlayerPrefs.HasKey("checkpoint")) {
+            jugadorControl.transform.position = new Vector3(PlayerPrefs.GetFloat("checkpoint_x"), PlayerPrefs.GetFloat("checkpoint_y"), jugadorControl.transform.position.z);
+        }
     }
 	
 	// Update is called once per frame
@@ -55,6 +61,17 @@ public class StageFinish : MonoBehaviour {
     
     public void quitGame() {
         SceneManager.LoadScene("MainMenu");
+        removeCheckpoint();
+    }
+
+    public void setCheckpoint(int number, Vector3 coords) {
+        PlayerPrefs.SetInt("checkpoint", number);
+        PlayerPrefs.SetFloat("checkpoint_x", coords.x);
+        PlayerPrefs.SetFloat("checkpoint_y", coords.y);
+    }
+
+    public void removeCheckpoint() {
+        PlayerPrefs.DeleteKey("checkpoint");
     }
     
     public void pauseGame() {
@@ -94,6 +111,7 @@ public class StageFinish : MonoBehaviour {
     
     public void showVictory() {
         victoryScreen.SetActive(true);
+        removeCheckpoint();
     }
     
     public void finishStage() {
