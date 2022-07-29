@@ -130,7 +130,7 @@ public class JugadorControl : MonoBehaviour {
                 animator.SetBool("Jump", true);
                 rb.velocity = new Vector2(rb.velocity.x, 0);
                 rb.AddForce(new Vector2(0, speedJump), ForceMode2D.Impulse);
-            } else if (jump && rb.velocity.y <= 0 && isGrounded()){
+            } else if (jump && rb.velocity.y <= 0.001 && isGrounded()){
                 jump = false;
                 ///doblejump = false;
                 animator.SetBool("Jump", false);
@@ -155,7 +155,7 @@ public class JugadorControl : MonoBehaviour {
             comprobarSkill(skillInput);
 
             //Controla el movimiento
-            if (checkControl()){
+            if (checkControlMov()){
                 animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
                 ///if(crouch){
                 ///    rb.velocity = new Vector2(horizontalInput * (speed / 2), rb.velocity.y);
@@ -190,9 +190,17 @@ public class JugadorControl : MonoBehaviour {
         return canControl && !attacking && !blocking && !dead && casting == "";
     }
 
+    public bool checkControlMov() {
+        if(jump) {
+            return canControl && !dead && casting == "";
+        } else {
+            return checkControl();
+        }
+    }
+
     //Controla el uso de habilidades
     void comprobarAtaque(bool ataqueInput){
-        if(ataqueInput && checkControl() && isGrounded()){
+        if(ataqueInput && checkControl() /*&& isGrounded()*/){
             attacking = true;
             animator.SetTrigger("Attack");
             ///audioSource[1].PlayDelayed(0.05f);

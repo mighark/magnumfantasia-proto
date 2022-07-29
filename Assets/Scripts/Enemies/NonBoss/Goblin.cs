@@ -86,7 +86,7 @@ public class Goblin : Enemy {
     
     private void execMove() {
         //ejecucion del movimiento
-        if(rb.velocity.y <= 0.000001f && rb.velocity.y >= -0.000001f) {
+        if(rb.velocity.y <= 0.0001f && rb.velocity.y >= -0.0001f) {
             rb.velocity = new Vector2(speedX, rb.velocity.y);
         }
     }

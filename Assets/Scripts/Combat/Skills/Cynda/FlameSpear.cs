@@ -27,7 +27,7 @@ public class FlameSpear : Buff {
     void useSkill() {
         Vector3 position = user.transform.position - new Vector3(offset.x * user.transform.localScale.x, offset.y, offset.z);
         Vector3 adjRotation = rotation * user.transform.localScale.x;
-        GameObject flameSpear = MonoBehaviour.Instantiate(flames, position, Quaternion.Euler(adjRotation));
+        GameObject flameSpear = MonoBehaviour.Instantiate(flames, position, Quaternion.Euler(adjRotation), user.transform);
         Weapon flameWeapon = flameSpear.GetComponent<Weapon>();
         flameWeapon.setUser(user);
         if(sm) {
