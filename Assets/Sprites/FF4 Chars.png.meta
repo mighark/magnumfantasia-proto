@@ -118,43 +118,43 @@ TextureImporter:
     second: FF4 Chars_37
   - first:
       213: 21300076
-    second: FF4 Chars_38
+    second: Cecil_idle
   - first:
       213: 21300078
-    second: FF4 Chars_39
+    second: Cecil_guard
   - first:
       213: 21300080
-    second: FF4 Chars_40
+    second: Cecil_walk1
   - first:
       213: 21300082
-    second: FF4 Chars_41
+    second: Cecil_walk2
   - first:
       213: 21300084
-    second: FF4 Chars_42
+    second: Cecil_attack1
   - first:
       213: 21300086
-    second: FF4 Chars_43
+    second: Cecil_attack2
   - first:
       213: 21300088
-    second: FF4 Chars_44
+    second: Cecil_special
   - first:
       213: 21300090
-    second: FF4 Chars_45
+    second: Cecil_cast1
   - first:
       213: 21300092
-    second: FF4 Chars_46
+    second: Cecil_cast2
   - first:
       213: 21300094
-    second: FF4 Chars_47
+    second: Cecil_jump
   - first:
       213: 21300096
-    second: FF4 Chars_48
+    second: Cecil_hurt
   - first:
       213: 21300098
-    second: FF4 Chars_49
+    second: Cecil_crouch
   - first:
       213: 21300100
-    second: FF4 Chars_50
+    second: Cecil_dead
   - first:
       213: 21300102
     second: FF4 Chars_51
@@ -232,40 +232,40 @@ TextureImporter:
     second: FF4 Chars_75
   - first:
       213: 21300152
-    second: FF4 Chars_76
+    second: Kain_cast2
   - first:
       213: 21300154
-    second: FF4 Chars_77
+    second: Kain_cast1
   - first:
       213: 21300156
-    second: FF4 Chars_78
+    second: Kain_idle
   - first:
       213: 21300158
-    second: FF4 Chars_79
+    second: Kain_guard
   - first:
       213: 21300160
-    second: FF4 Chars_80
+    second: Kain_walk
   - first:
       213: 21300162
-    second: FF4 Chars_81
+    second: Kain_attack1
   - first:
       213: 21300164
-    second: FF4 Chars_82
+    second: Kain_attack2
   - first:
       213: 21300166
-    second: FF4 Chars_83
+    second: Kain_special
   - first:
       213: 21300168
-    second: FF4 Chars_84
+    second: Kain_jump
   - first:
       213: 21300170
-    second: FF4 Chars_85
+    second: Kain_hurt
   - first:
       213: 21300172
-    second: FF4 Chars_86
+    second: Kain_crouch
   - first:
       213: 21300174
-    second: FF4 Chars_87
+    second: Kain_dead
   - first:
       213: 21300176
     second: FF4 Chars_88
@@ -1805,6 +1805,12 @@ TextureImporter:
   - first:
       213: 21301200
     second: FF4 Chars_600
+  - first:
+      213: -129798692329209002
+    second: Kain_cast2
+  - first:
+      213: 8106216623225838269
+    second: Kain_cast1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -2692,7 +2698,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_38
+      name: Cecil_idle
       rect:
         serializedVersion: 2
         x: 42
@@ -2713,7 +2719,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_39
+      name: Cecil_guard
       rect:
         serializedVersion: 2
         x: 60
@@ -2734,7 +2740,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_40
+      name: Cecil_walk1
       rect:
         serializedVersion: 2
         x: 78
@@ -2755,7 +2761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_41
+      name: Cecil_walk2
       rect:
         serializedVersion: 2
         x: 96
@@ -2776,7 +2782,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_42
+      name: Cecil_attack1
       rect:
         serializedVersion: 2
         x: 114
@@ -2797,7 +2803,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_43
+      name: Cecil_attack2
       rect:
         serializedVersion: 2
         x: 132
@@ -2818,7 +2824,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_44
+      name: Cecil_special
       rect:
         serializedVersion: 2
         x: 150
@@ -2839,7 +2845,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_45
+      name: Cecil_cast1
       rect:
         serializedVersion: 2
         x: 171
@@ -2860,7 +2866,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_46
+      name: Cecil_cast2
       rect:
         serializedVersion: 2
         x: 189
@@ -2881,7 +2887,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_47
+      name: Cecil_jump
       rect:
         serializedVersion: 2
         x: 207
@@ -2902,7 +2908,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_48
+      name: Cecil_hurt
       rect:
         serializedVersion: 2
         x: 225
@@ -2923,7 +2929,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_49
+      name: Cecil_crouch
       rect:
         serializedVersion: 2
         x: 243
@@ -2944,7 +2950,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_50
+      name: Cecil_dead
       rect:
         serializedVersion: 2
         x: 261
@@ -3490,49 +3496,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_76
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 430
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 945c08540b7e03f46b8c2c2974cbe2d2
-      internalID: 21300152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FF4 Chars_77
-      rect:
-        serializedVersion: 2
-        x: 29
-        y: 430
-        width: 10
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f50e02a2a28353b4bb40a21372692581
-      internalID: 21300154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FF4 Chars_78
+      name: Kain_idle
       rect:
         serializedVersion: 2
         x: 42
@@ -3553,13 +3517,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_79
+      name: Kain_guard
       rect:
         serializedVersion: 2
         x: 60
         y: 423
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3574,7 +3538,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_80
+      name: Kain_walk
       rect:
         serializedVersion: 2
         x: 78
@@ -3595,7 +3559,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_81
+      name: Kain_attack1
       rect:
         serializedVersion: 2
         x: 96
@@ -3616,7 +3580,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_82
+      name: Kain_attack2
       rect:
         serializedVersion: 2
         x: 114
@@ -3637,7 +3601,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_83
+      name: Kain_special
       rect:
         serializedVersion: 2
         x: 132
@@ -3658,13 +3622,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_84
+      name: Kain_jump
       rect:
         serializedVersion: 2
         x: 158
         y: 423
         width: 16
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3679,13 +3643,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_85
+      name: Kain_hurt
       rect:
         serializedVersion: 2
         x: 176
         y: 423
         width: 16
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3700,13 +3664,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_86
+      name: Kain_crouch
       rect:
         serializedVersion: 2
         x: 194
         y: 423
         width: 16
-        height: 20
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -3721,7 +3685,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FF4 Chars_87
+      name: Kain_dead
       rect:
         serializedVersion: 2
         x: 212
@@ -14510,6 +14474,48 @@ TextureImporter:
       bones: []
       spriteID: fc8f13e1a05089943984f05d0a09d74f
       internalID: 21301200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kain_cast2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 423
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653486be6ccd23ef0800000000000000
+      internalID: -129798692329209002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kain_cast1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 423
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba1ebbf1111f7070800000000000000
+      internalID: 8106216623225838269
       vertices: []
       indices: 
       edges: []

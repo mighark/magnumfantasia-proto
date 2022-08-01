@@ -47452,8 +47452,8 @@ Tilemap:
   - first: {x: 34, y: 7, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileIndex: 9
+      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -49817,9 +49817,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 092a2acefc0e6264db73d2a7c419ff6c, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 927c92c189bbcec459e24f6e56f04e16, type: 2}
-  - m_RefCount: 15
+  - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: 17c1e645b5ea4ff4ebc4fc1fc45ab0a5, type: 2}
-  - m_RefCount: 87
+  - m_RefCount: 88
     m_Data: {fileID: 11400000, guid: 1cc6378d56cc505438aa7eeba9567678, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: d134821672168444e8578a70af4c0806, type: 2}
@@ -49842,9 +49842,9 @@ Tilemap:
     m_Data: {fileID: 21300048, guid: ad1c3008b53e15f4db44e925b3f19072, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300086, guid: ad1c3008b53e15f4db44e925b3f19072, type: 3}
-  - m_RefCount: 15
+  - m_RefCount: 14
     m_Data: {fileID: 21300000, guid: ad1c3008b53e15f4db44e925b3f19072, type: 3}
-  - m_RefCount: 87
+  - m_RefCount: 88
     m_Data: {fileID: 21300002, guid: ad1c3008b53e15f4db44e925b3f19072, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300080, guid: ad1c3008b53e15f4db44e925b3f19072, type: 3}
@@ -49944,6 +49944,18 @@ CompositeCollider2D:
       - X: 270000000
         Y: -90000000
       - X: 270000000
+        Y: 70000000
+      - X: 339999900
+        Y: 70000000
+      - X: 339999900
+        Y: 69999959
+      - X: 339999959
+        Y: 69999900
+      - X: 350000041
+        Y: 69999900
+      - X: 350000100
+        Y: 69999959
+      - X: 350000100
         Y: 70000000
       - X: 540000000
         Y: 70000000
@@ -50066,6 +50078,18 @@ CompositeCollider2D:
       - X: 530000000
         Y: 110000000
       - X: 530000000
+        Y: 80000000
+      - X: 350000100
+        Y: 80000000
+      - X: 350000100
+        Y: 80000041
+      - X: 350000041
+        Y: 80000100
+      - X: 339999959
+        Y: 80000100
+      - X: 339999900
+        Y: 80000041
+      - X: 339999900
         Y: 80000000
       - X: 260000000
         Y: 80000000
@@ -50669,6 +50693,16 @@ PrefabInstance:
       objectReference: {fileID: 1988311184}
     - target: {fileID: 114976158037714084, guid: 2b0c5b9d45f205546800bdf5f2c808d2,
         type: 3}
+      propertyPath: crouchSize
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976158037714084, guid: 2b0c5b9d45f205546800bdf5f2c808d2,
+        type: 3}
+      propertyPath: crouchOffset
+      value: -0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976158037714084, guid: 2b0c5b9d45f205546800bdf5f2c808d2,
+        type: 3}
       propertyPath: gameController
       value: 
       objectReference: {fileID: 1433971232}
@@ -50855,11 +50889,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4249912091705144, guid: 8a4c52a62947b804d9d0020b76d096a8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -25.19
       objectReference: {fileID: 0}
     - target: {fileID: 4249912091705144, guid: 8a4c52a62947b804d9d0020b76d096a8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -8.26
       objectReference: {fileID: 0}
     - target: {fileID: 4249912091705144, guid: 8a4c52a62947b804d9d0020b76d096a8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -50882,6 +50916,11 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 81725526218955612, guid: 8a4c52a62947b804d9d0020b76d096a8,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114001013756572072, guid: 8a4c52a62947b804d9d0020b76d096a8,
         type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -51118,7 +51157,7 @@ PrefabInstance:
     - target: {fileID: 114849316555450400, guid: c5563befa2084d842a15db42280985cd,
         type: 3}
       propertyPath: maxPosition
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5563befa2084d842a15db42280985cd, type: 3}

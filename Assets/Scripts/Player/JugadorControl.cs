@@ -39,12 +39,17 @@ public class JugadorControl : MonoBehaviour {
     public int manaPerBlock = 1;
     public bool dead = false;
 
+    private float bcOffsetY;
+    private float bcSizeY;
+    public float crouchOffset;
+    public float crouchSize;
+
     //Variables que controlan los saltos
     private bool canControl = true;
     private bool jump = false;
     ///private bool doblejump = false;
     ///Variable que controla el estar agachado
-    //private bool crouch = false;
+    private bool crouch = false;
     
     //Variables que controlan el uso de habilidades
     private bool attacking = false;
@@ -78,6 +83,8 @@ public class JugadorControl : MonoBehaviour {
         currentSpeedJump = speedJump;
 
         jugadorScale = transform.localScale.x;
+        bcOffsetY = bc.offset.y;
+        bcSizeY = bc.size.y;
 
         //Modo dios
         //Cheat();
@@ -106,7 +113,7 @@ public class JugadorControl : MonoBehaviour {
             //Obtienes el input
             float horizontalInput = Input.GetAxis("Horizontal");
             bool jumpInput = Input.GetButtonDown("Jump"); 
-            ///float crouchInput = Input.GetAxisRaw("Crouch");
+            bool crouchInput = Input.GetButton("Crouch");
             bool ataqueInput = Input.GetButtonDown("Attack");
             bool blockInput = Input.GetButtonDown("Block");
             bool[] skillInput = new bool[6];
@@ -137,15 +144,17 @@ public class JugadorControl : MonoBehaviour {
             }
 
             //Controla el agacharse
-            ///if ((crouchInput == 1) && isGrounded() && !attacking){
-                ///crouch = true;
-                ///crouchCollider.enabled = true;
-                ///bc.enabled = false;
-            ///}else{
-                ///crouch = false;
-                ///crouchCollider.enabled = false;
-                ///bc.enabled = true;
-            ///}
+            if (crouchInput && isGrounded() && checkControl()){
+                crouch = true;
+                animator.SetBool("Crouch", true);
+                bc.size = new Vector2(bc.size.x, crouchSize);
+                bc.offset = new Vector2(bc.offset.x, crouchOffset);
+            } else {
+                crouch = false;
+                animator.SetBool("Crouch", false);
+                bc.offset = new Vector2(bc.offset.x, bcOffsetY);
+                bc.size = new Vector2(bc.size.x, bcSizeY);
+            }
 
             ///animator.SetBool("Crouch", crouch);
 
@@ -157,11 +166,7 @@ public class JugadorControl : MonoBehaviour {
             //Controla el movimiento
             if (checkControlMov()){
                 animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
-                ///if(crouch){
-                ///    rb.velocity = new Vector2(horizontalInput * (speed / 2), rb.velocity.y);
-                ///}else{
-                    rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
-                ///}
+                rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
             } else {
                 animator.SetFloat("Speed", 0);
                 if(canControl) {
@@ -194,7 +199,7 @@ public class JugadorControl : MonoBehaviour {
         if(jump) {
             return canControl && !dead && casting == "";
         } else {
-            return checkControl();
+            return checkControl() && !crouch;
         }
     }
 
